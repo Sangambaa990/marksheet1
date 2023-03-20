@@ -1,0 +1,111 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    body {
+      margin: 0;
+      font-family: Arial;
+      font-size: 17px;
+    }
+    
+    #myVideo {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%; 
+      min-height: 100%;
+    }
+    
+    .content {
+    position:relative;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      color: #f1f1f1;
+      width: 100%;
+      
+      padding-bottom: 370px;
+      padding-top: 10px;
+      text-align: center;
+      font-family: monospace;
+      
+    }
+ input{background-color:black ;
+color: cyan;
+border-color: aqua;
+}
+    #myBtn {
+      width: 200px;
+      font-size: 18px;
+      padding: 10px;
+      border: none;
+      background: #000;
+      color: #fff;
+      cursor: pointer;
+    }
+    
+    #myBtn:hover {
+      background: #ddd;
+      color: black;
+    }
+    .signin{
+        color: white;
+        background-color: black;
+        font-size: 16px;
+        width: 180px;
+        border-radius: 10px;
+        padding: 5px;
+border-color: blue;
+font-family: monospace;
+    }
+    .signin:hover{
+        color: cyan;
+        background-color: rgb(25, 0, 255);
+        transition: 1s;
+        border-color: aqua;
+
+    }
+    </style>
+    </head>
+    <body>
+    
+    <video autoplay muted loop id="myVideo" loop>
+      <source src="background1.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+    
+    <div class="content">
+      <h1>Login</h1>
+      <p>Username</p>
+      <input type="text" name="username" id="username">
+      <p>Password</p>
+      <input type="password" name="password" id="password">
+      <p><a href="marksheet.html" target="_blank"><button class="signin">Sign In</button></a></p>
+    </div>
+    
+    <script>
+    var video = document.getElementById("myVideo");
+    var btn = document.getElementById("myBtn");
+    
+    function myFunction() {
+      if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+      } else {
+        video.pause();
+        btn.innerHTML = "Play";
+      }
+    }
+    </script>
+    
+    </body>
+    </html>
+    
+
+  
